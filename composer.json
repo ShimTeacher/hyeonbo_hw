@@ -1,0 +1,36 @@
+{
+	"description": "The CodeIgniter framework",
+	"name": "codeigniter/framework",
+	"type": "project",
+	"homepage": "https://codeigniter.com",
+	"license": "MIT",
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"slack": "https://codeigniterchat.slack.com",
+		"source": "https://github.com/bcit-ci/CodeIgniter"
+	},
+	"require": {
+		"php": ">=7.3",
+		"doctrine/orm": "^2.8",
+		"symfony/serializer": "^5.2",
+		"symfony/property-access": "^5.2",
+		"symfony/monolog-bundle": "^3.6",
+		"firebase/php-jwt": "^5.2",
+		"jms/serializer": "^3.10"
+	},
+	"suggest": {
+		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
+	},
+	"require-dev": {
+		"mikey179/vfsStream": "1.1.*",
+		"phpunit/phpunit": "4.* || 5.*"
+	},
+	"autoload": {
+	  "psr-4": {
+		"Api\\": "application/controllers/api/",
+		"App\\": "application/",
+		"": "application/models/entities"
+	  }
+	}
+}
