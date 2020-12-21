@@ -12,7 +12,7 @@ docker 실행후 8000번 포트로 설정됩니다.
 * [로그인](doc/Auth/login.md) : `POST /api/v1/login`
 * [로그아웃](doc/Auth/logout.md) : `POST /api/v1/logout`
 * [회원조회](doc/User/info.md) : `GET /api/v1/users/:user_id`
-* [회원주문조회](doc/User/order.md) : `GET /api/v1/users/:user_id/orders`
+* [회원주문조회](doc/User/orders.md) : `GET /api/v1/users/:user_id/orders`
 * [전체회원조회](doc/User/all-info.md) : `GET /api/v1/users`
 
 # Response Note
@@ -39,6 +39,10 @@ docker 실행후 8000번 포트로 설정됩니다.
     "http_code": 200
 }
 ```
+
+## Create query
+생성해야할 DB table 정보는 프로젝트 ROOT 위치에 
+create_query.sql 파일로 만들어두었습니다. 
 
 ## Installation
 Composer, Docker installation is required
